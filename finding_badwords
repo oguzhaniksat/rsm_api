@@ -1,0 +1,21 @@
+import json
+import re
+#tweet = open("assignment_tweets.json", "r" , encoding = "utf-8")
+#t_read = tweet.readlines()
+#count = sum(1 for match in re.finditer(r"\bmal\b" , t_read))
+
+words=["amina" , "amk" , "salak" , "aq" , "mal" , "sik" , "piç"]
+
+with open("assignment_tweets.json") as f:
+    contents = f.read()
+    count =sum(1 for match in re.finditer(r"\bmal \b", contents))
+    count2 =sum(1 for match in re.finditer(r"\bamk \b", contents))
+    count3 =sum(1 for match in re.finditer(r"\bamina \b", contents))
+    count4 =sum(1 for match in re.finditer(r"\bsalak \b", contents))
+    count5 =sum(1 for match in re.finditer(r"\bsik \b", contents))
+    count6 =sum(1 for match in re.finditer(r"\bpiç \b", contents))
+    count8 =sum(1 for match in re.finditer(r"\bibne \b", contents))
+    count7 =sum(1 for match in re.finditer(r"\baq \b", contents))
+    
+    
+print(count + count2 + count3+count4+count5+count6+count7+count8)
