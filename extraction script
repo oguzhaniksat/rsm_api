@@ -1,0 +1,9 @@
+access_token = "xx" #Tokens are hidden on purpose
+access_token_secret = "xx"
+api_key = "xx"
+api_secret_key = "x"
+
+tracking = ['#Evde23Nisan', '#23nisan2020' , '#23NisanKutluOlsun', '#EvdeBayramVar'] # tracking multiple keywords/hashtags
+#tracking = ['#Evde23Nisan'] # tracking only one keyword - remove the # in front of this line to activate it
+
+filename = 'assignment_tweets.json'
