@@ -1,0 +1,15 @@
+# number of (Language of tweet are Turkish)
+f = open("assignment_tweets.json", "r")
+con = f.readlines()
+counter = -1
+number_of_tr=0
+for c in con:
+    counter+=1
+    
+    if ('{' not in c): continue
+    myobject = json.loads(c)
+    lan = myobject.get('lang')
+    if lan == "tr":
+        number_of_tr = number_of_tr +1
+print(number_of_tr)            
+f.close()
